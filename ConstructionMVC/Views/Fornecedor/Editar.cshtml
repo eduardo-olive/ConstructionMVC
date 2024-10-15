@@ -1,15 +1,36 @@
 ﻿@model ConstructionMVC.Models.Fornecedor
 @{
-	ViewData["Title"] = "Edição de Fornecedor";
+	ViewData["Title"] = "Editar Fornecedor";
 }
 
 <main class="container mt-3">
 	<div class="col-sm-12">
 		<h1>@ViewData["Title"]</h1>
-		<form method="post" class="mt-3">
+		<form asp-action="Editar">
+			<input type="hidden" asp-for="Id" />
 			<div class="form-group">
-				<label class="form-label">Razão Social</label>
-				<input class="form-control col-12" />
+				<label asp-for="RazaoSocial" class="control-label"></label>
+				<input asp-for="RazaoSocial" class="form-control form-control-sm" />
+				<span asp-validation-for="RazaoSocial" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="NomeFantasia" class="form-label"></label>
+				<input asp-for="NomeFantasia" class="form-control form-control-sm" />
+				<span asp-validation-for="NomeFantasia" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Responsavel" class="form-label"></label>
+				<input asp-for="Responsavel" class="form-control form-control-sm" />
+				<span asp-validation-for="Responsavel" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Telefone" class="form-label"></label>
+				<input asp-for="Telefone" class="form-control form-control-sm col-6" />
+				<span asp-validation-for="Telefone" class="text-danger"></span>
+			</div>
+			<div class="form-group text-left mt-2">
+				<a asp-action="Index" class="btn btn-info">Cancelar</a>
+				<input type="submit" value="Salvar" class="btn btn-primary" />
 			</div>
 		</form>
 	</div>
