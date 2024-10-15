@@ -11,10 +11,12 @@ namespace ConstructionMVC.Models
         public int Id { get; set; }
         
         [Required(ErrorMessage ="O Campo {0} é de preenchimento obrigatório.")]
+        [DisplayName("Razão Social")]
         public string RazaoSocial { get; set; }
         
         [Required(ErrorMessage = "O Campo {0} é de preenchimento obrigatório.")]
-        public string Fantasia { get; set; }
+        [DisplayName("Nome Fantasia")]
+        public string NomeFantasia { get; set; }
         
         public string Responsavel { get; set; }
         
