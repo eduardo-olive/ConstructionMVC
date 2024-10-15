@@ -1,0 +1,40 @@
+﻿@model ConstructionMVC.Models.Fornecedor
+@{
+	ViewData["Title"] = "Lista de Fornecedores";
+}
+
+<header class="container p-3">
+	<div class="row align-items-center">
+		<div class="col-sm-6"><h1>@ViewData["Title"]</h1></div>
+		<div class="col-sm-6 text-end"><a class="btn btn-info">Novo Fornecedor</a></div>
+	</div>
+</header>
+
+<main class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Razão Social</th>
+				<th>Nome Fantasia</th>
+				<th>Responsável</th>
+				<th>Telefone</th>
+				<th class="text-center">Ações</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Teste Ltda.</td>
+				<td>Fornecedor Teste</td>
+				<td>Nome do camarada responsável</td>
+				<td>99 9922-2222</td>
+				<td class="text-center">
+					<a class="btn btn-primary btn-sm" asp-page="Editar">Alterar</a>
+					<form class="d-inline-block method="post">
+						<button class="btn btn-danger btn-sm" onclick="confirmarExclusao(this);" type="button">Excluir</button>
+					</form>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</main>

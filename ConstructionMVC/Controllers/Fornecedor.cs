@@ -4,9 +4,14 @@ namespace ConstructionMVC.Controllers
 {
     public class Fornecedor : Controller
     {
-        public String Index()
+        public IActionResult Index()
         {
-            return "View()";
+            return View();
+        }
+        [HttpPut]
+        public IActionResult Edit()
+        {
+            return View();
         }
     }
 }

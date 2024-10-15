@@ -28,3 +28,4 @@ C:\Dev\ConstructionMVC\ConstructionMVC\obj\Debug\net8.0\refint\ConstructionMVC.d
 C:\Dev\ConstructionMVC\ConstructionMVC\obj\Debug\net8.0\ConstructionMVC.pdb
 C:\Dev\ConstructionMVC\ConstructionMVC\obj\Debug\net8.0\ConstructionMVC.genruntimeconfig.cache
 C:\Dev\ConstructionMVC\ConstructionMVC\obj\Debug\net8.0\ref\ConstructionMVC.dll
+C:\Dev\ConstructionMVC\ConstructionMVC\obj\Debug\net8.0\ConstructionMVC.sourcelink.json
