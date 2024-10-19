@@ -1,4 +1,4 @@
-﻿@model ConstructionMVC.Models.Fornecedor
+﻿@model List<FornecedorModel>
 @{
 	ViewData["Title"] = "Lista de Fornecedores";
 }
@@ -22,19 +22,23 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>Teste Ltda.</td>
-				<td>Fornecedor Teste</td>
-				<td>Nome do camarada responsável</td>
-				<td>99 9922-2222</td>
-				<td class="text-center">
-					<a class="btn btn-primary btn-sm" asp-action="Editar">Alterar</a>
-					<form class="d-inline-block method="post">
-						<button class="btn btn-danger btn-sm" onclick="confirmarExclusao(this);" type="button">Excluir</button>
-					</form>
-					
-				</td>
-			</tr>
+			@foreach(FornecedorModel fornecedor in Model)
+			{
+				<tr>
+					<td>@fornecedor.RazaoSocial</td>
+					<td>@fornecedor.NomeFantasia</td>
+					<td>@fornecedor.Responsavel</td>
+					<td>@fornecedor.Telefone</td>
+					<td class="text-center">
+						<a class="btn btn-primary btn-sm" asp-controle="Fornecedor" asp-action="Editar" asp-route-id="@fornecedor.Id">Alterar</a>
+						<form class="d-inline-block method="post">
+							<button class="btn btn-danger btn-sm" onclick="confirmarExclusao(this);" type="button">Excluir</button>
+						</form>
+
+					</td>
+				</tr>
+			}
+			
 		</tbody>
 	</table>
 </main>
