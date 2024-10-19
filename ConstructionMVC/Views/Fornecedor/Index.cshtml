@@ -30,9 +30,9 @@
 					<td>@fornecedor.Responsavel</td>
 					<td>@fornecedor.Telefone</td>
 					<td class="text-center">
-						<a class="btn btn-primary btn-sm" asp-controle="Fornecedor" asp-action="Editar" asp-route-id="@fornecedor.Id">Alterar</a>
-						<form class="d-inline-block method="post">
-							<button class="btn btn-danger btn-sm" onclick="confirmarExclusao(this);" type="button">Excluir</button>
+						<a class="btn btn-primary btn-sm" asp-controller="Fornecedor" asp-action="Editar" asp-route-id="@fornecedor.Id">Alterar</a>
+						<form class="d-inline-block" asp-controller="Fornecedor" asp-action="Apagar" asp-route-id="@fornecedor.Id" method="post">
+							<button class="btn btn-danger btn-sm" onclick="ConfirmaExclusao(this);" type="button">Excluir</button>
 						</form>
 
 					</td>
@@ -42,3 +42,9 @@
 		</tbody>
 	</table>
 </main>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_CustomConfirm");
+	}
+}

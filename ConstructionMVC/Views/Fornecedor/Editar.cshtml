@@ -6,7 +6,7 @@
 <main class="container mt-3">
 	<div class="col-sm-12">
 		<h1>@ViewData["Title"]</h1>
-		<form asp-action="Editar">
+		<form asp-controller="Fornecedor" asp-action="Editar" method="post">
 			<input type="hidden" asp-for="Id" />
 			<div class="form-group">
 				<label asp-for="RazaoSocial" class="control-label"></label>

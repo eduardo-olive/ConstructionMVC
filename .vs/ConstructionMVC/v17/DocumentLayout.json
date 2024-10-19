@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Dev\\ConstructionMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|c:\\dev\\constructionmvc\\constructionmvc\\repository\\fornecedorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|solutionrelative:constructionmvc\\repository\\fornecedorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|c:\\dev\\constructionmvc\\constructionmvc\\views\\fornecedor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|solutionrelative:constructionmvc\\views\\fornecedor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|c:\\dev\\constructionmvc\\constructionmvc\\controllers\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|solutionrelative:constructionmvc\\controllers\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|c:\\dev\\constructionmvc\\constructionmvc\\models\\obramodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|solutionrelative:constructionmvc\\models\\obramodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,39 +35,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FornecedorRepository.cs",
-              "DocumentMoniker": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Repository\\FornecedorRepository.cs",
-              "RelativeDocumentMoniker": "ConstructionMVC\\Repository\\FornecedorRepository.cs",
-              "ToolTip": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Repository\\FornecedorRepository.cs",
-              "RelativeToolTip": "ConstructionMVC\\Repository\\FornecedorRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Title": "ObraModel.cs",
+              "DocumentMoniker": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Models\\ObraModel.cs",
+              "RelativeDocumentMoniker": "ConstructionMVC\\Models\\ObraModel.cs",
+              "ToolTip": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Models\\ObraModel.cs",
+              "RelativeToolTip": "ConstructionMVC\\Models\\ObraModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:12:33.757Z",
+              "WhenOpened": "2024-10-19T21:55:35.022Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Views\\Fornecedor\\Index.cshtml",
-              "RelativeDocumentMoniker": "ConstructionMVC\\Views\\Fornecedor\\Index.cshtml",
-              "ToolTip": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Views\\Fornecedor\\Index.cshtml",
-              "RelativeToolTip": "ConstructionMVC\\Views\\Fornecedor\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T17:09:59.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Fornecedor.cs",
-              "DocumentMoniker": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Controllers\\Fornecedor.cs",
-              "RelativeDocumentMoniker": "ConstructionMVC\\Controllers\\Fornecedor.cs",
-              "ToolTip": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Controllers\\Fornecedor.cs",
-              "RelativeToolTip": "ConstructionMVC\\Controllers\\Fornecedor.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowB0AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:06:42.948Z"
             }
           ]
         }

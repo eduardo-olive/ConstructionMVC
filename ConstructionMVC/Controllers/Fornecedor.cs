@@ -12,11 +12,9 @@ namespace ConstructionMVC.Controllers
         {
             _fornecedorRepository = fornecedorRepository;
         }
-
-        
+ 
         public IActionResult Criar()
         {
-           
             return View();
         }
         public IActionResult Index()
@@ -25,20 +23,39 @@ namespace ConstructionMVC.Controllers
 			return View(fornecedores);
         }
         
-        public IActionResult Editar()
+        public IActionResult Editar(int id)
         {
-            return View();
-        }
-        [HttpDelete]
-        public IActionResult Excluir()
-        {
-            return View();
-        }
+			FornecedorModel fonecedorModel = _fornecedorRepository.ListarById(id);
+			return View(fonecedorModel);
+		}
+        
         [HttpPost]
         public IActionResult Criar(FornecedorModel fornecedor)
         {
-            _fornecedorRepository.Adicionar(fornecedor);
+            if (ModelState.IsValid)
+            {
+				_fornecedorRepository.Adicionar(fornecedor);
+				return RedirectToAction("Index");
+			}
+            return View(fornecedor);
+        }
+		
+        [HttpPost]
+		public IActionResult Editar(FornecedorModel fornecedor)
+        {
+            if (ModelState.IsValid)
+            {
+				FornecedorModel fonecedorModel = _fornecedorRepository.Editar(fornecedor);
+				return RedirectToAction("Index");
+			}
+            return View(fornecedor);
+		}
+
+		public IActionResult Apagar(FornecedorModel fornecedor)
+        {
+            _fornecedorRepository.Apagar(fornecedor);
             return RedirectToAction("Index");
         }
+        
     }
 }
