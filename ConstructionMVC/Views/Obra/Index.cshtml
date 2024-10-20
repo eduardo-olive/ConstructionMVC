@@ -1,0 +1,48 @@
+﻿@model List<ObraModel>
+@{
+	ViewData["Title"] = "Lista de Obras";
+}
+
+<header class="container p-3">
+	<div class="row align-items-center">
+		<div class="col-sm-6"><h1>@ViewData["Title"]</h1></div>
+		<div class="col-sm-6 text-end"><a class="btn btn-info" asp-action="Criar">Nova Obra</a></div>
+	</div>
+</header>
+
+<main class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Obra</th>
+				<th>Endereco</th>
+				<th>Responsável</th>
+				<th class="text-center">Ações</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (ObraModel obra in Model)
+			{
+				<tr>
+					<td>@obra.Nome</td>
+					<td>@obra.Endereco</td>
+					<td>@obra.Responsavel</td>
+					<td class="text-center">
+						<a class="btn btn-primary btn-sm" asp-controller="Obra" asp-action="Editar" asp-route-id="@obra.Id">Alterar</a>
+						<form class="d-inline-block" asp-controller="Obra" asp-action="Apagar" asp-route-id="@obra.Id" method="post">
+							<button class="btn btn-danger btn-sm" onclick="ConfirmaExclusao(this);" type="button">Excluir</button>
+						</form>
+
+					</td>
+				</tr>
+			}
+
+		</tbody>
+	</table>
+</main>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_CustomConfirm");
+	}
+}

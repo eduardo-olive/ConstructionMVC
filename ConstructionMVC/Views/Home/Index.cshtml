@@ -1,8 +1,32 @@
-﻿@{
+﻿@model List<ObraModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Seja bem vindo</h1>
+
+    <p>Breve descrição do sistema.</p>
+
+    <div class="row">
+        @foreach (var obra in Model)
+        {
+            <div class="col-sm-3">
+                <div class="card text-center bg-light mb-4">
+                    <!-- <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/553688c4e4b0be6b20425b7a/1436969190352-PR0K353H3Q8OK8XNKTVI/2015-04-27+16.10.28-2.jpg?format=1000w" class="card-img-top" alt="..."> -->
+                    <div class="card-header">
+                        @obra.Nome
+                    </div>
+                    <div class="card-body" style="heigth:124px;">
+                        <h5 class="card-title">@obra.Responsavel</h5>
+                        <p class="card-text text-truncate">@obra.Descricao</p>
+                    </div>
+                    <div class="card-footer">
+                        <div><a asp-controller="Home" asp-action="Details" asp-route-id="@obra.Id" class="btn btn-secondary">Detalhes</a></div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
 </div>

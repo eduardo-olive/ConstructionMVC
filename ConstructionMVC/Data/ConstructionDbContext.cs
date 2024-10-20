@@ -10,5 +10,6 @@ namespace ConstructionMVC.Data
         }
 
         public DbSet<FornecedorModel> Fornecedores { get; set; }
+        public DbSet<ObraModel> Obras { get; set; }
     }
 }

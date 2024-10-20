@@ -1,0 +1,67 @@
+﻿@model ConstructionMVC.Models.ObraModel
+@{
+	ViewData["Title"] = "Detalhes da Obra";
+}
+
+<main class="container mt-3">
+	<div class="col-sm-12">
+		<h1>@ViewData["Title"]</h1>
+		<form class="mt-3">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<input type="hidden" asp-for="Id" />
+			<div class="card">
+				<div class="card-header">
+					Dados da obra
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label asp-for="Nome" class="control-label"></label>
+						<input asp-for="Nome" readonly class="form-control form-control-sm" />
+						<span asp-validation-for="Nome" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Descricao" class="form-label"></label>
+						<input asp-for="Descricao" readonly class="form-control form-control-sm" rows="5" />
+						<span asp-validation-for="Descricao" class="text-danger"></span>
+					</div>
+
+					<div class="form-group">
+						<label asp-for="Responsavel" class="form-label"></label>
+						<input asp-for="Responsavel" readonly class="form-control form-control-sm col-6" />
+						<span asp-validation-for="Responsavel" class="text-danger"></span>
+					</div>
+				</div>
+			</div>
+
+			<br />
+
+			<div class="card">
+				<div class="card-header">
+					Localização
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label asp-for="Endereco" class="form-label"></label>
+						<input asp-for="Endereco" readonly class="form-control form-control-sm" />
+						<span asp-validation-for="Endereco" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Bairro" class="form-label"></label>
+						<input asp-for="Bairro" readonly class="form-control form-control-sm" />
+						<span asp-validation-for="Bairro" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Cidade" class="form-label"></label>
+						<input asp-for="Cidade" readonly class="form-control form-control-sm" />
+						<span asp-validation-for="Cidade" class="text-danger"></span>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-group text-left mt-2">
+				<a asp-action="Index" class="btn btn-info">Voltar</a>
+			</div>
+		</form>
+	</div>
+</main>

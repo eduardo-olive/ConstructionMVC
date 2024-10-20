@@ -11,6 +11,7 @@ builder.Services.AddDbContext<ConstructionDbContext>(options =>
 		options.UseSqlite(builder.Configuration.GetConnectionString("ApplicationDBContext") ?? throw new InvalidOperationException("Connection string 'MvcMovieContext' not found.")));
 
 builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+builder.Services.AddScoped<IObraRepository, ObraRepository>();
 
 var app = builder.Build();
 

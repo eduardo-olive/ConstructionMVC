@@ -20,7 +20,7 @@ namespace ConstructionMVC.Models
 		
 		[Required(ErrorMessage = "O Campo {0} é de preenchimento obrigatório")]
 		[Display(Name = "Endereço")]
-		public string Endereco { get;}
+		public string Endereco { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Responsavel { get; set; }
