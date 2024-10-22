@@ -22,14 +22,14 @@ namespace ConstructionMVC.Models
 		[Display(Name = "Fornecedor")]
 		public int IdFornecedor { get; set; }
 
-		[ForeignKey("IdFornecedor")]
+		[ForeignKey("Id")]
 		public FornecedorModel Fornecedor { get; set; }
 
 		[Required]
 		[Display(Name = "Categoria")]
 		public int IdCategoria { get; set; }
 
-		[ForeignKey("IdCategoria")]
+		[ForeignKey("Id")]
 		public CategoriaModel Categoria { get; set; }
 	}
 }
