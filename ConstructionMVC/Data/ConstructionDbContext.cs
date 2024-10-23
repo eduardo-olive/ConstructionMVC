@@ -9,7 +9,16 @@ namespace ConstructionMVC.Data
         {   
         }
 
-        public DbSet<FornecedorModel> Fornecedores { get; set; }
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<ItemObraModel>()
+				   .HasKey(e => new { e.IdObra, e.IdProduto, e.DataCompra });
+		}
+
+		public DbSet<FornecedorModel> Fornecedores { get; set; }
         public DbSet<ObraModel> Obras { get; set; }
+        public DbSet<CategoriaModel> Categorias { get; set; }
+        public DbSet<ProdutoModel> Produtos { get; set; }
+        public DbSet<ItemObraModel> ItemsObra { get; set; }
     }
 }

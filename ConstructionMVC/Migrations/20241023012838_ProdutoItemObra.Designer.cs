@@ -3,6 +3,7 @@ using System;
 using ConstructionMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConstructionMVC.Migrations
 {
     [DbContext(typeof(ConstructionDbContext))]
-    partial class ConstructionDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241023012838_ProdutoItemObra")]
+    partial class ProdutoItemObra
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
