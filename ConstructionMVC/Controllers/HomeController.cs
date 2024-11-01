@@ -1,8 +1,6 @@
 using ConstructionMVC.Data;
 using ConstructionMVC.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using SQLitePCL;
 using System.Diagnostics;
 
 namespace ConstructionMVC.Controllers
@@ -16,10 +14,16 @@ namespace ConstructionMVC.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string SearchString)
         {
-            List<ObraModel> obras = _context.Obras.ToList();
-            return View(obras);
+            var obras = from o in _context.Obras 
+                            select o;
+
+            if(!String.IsNullOrEmpty(SearchString) ) { 
+                obras = obras.Where(s => s.Nome!.ToUpper().Contains(SearchString.ToUpper()));
+            }
+
+            return View(obras.ToList());
         }
 
         public IActionResult Details(int id)

@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Dev\\ConstructionMVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|c:\\dev\\constructionmvc\\constructionmvc\\views\\obra\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|solutionrelative:constructionmvc\\views\\obra\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|c:\\dev\\constructionmvc\\constructionmvc\\controllers\\obracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0258D753-1EE1-4FF5-8EB3-0FFBEC833B68}|ConstructionMVC\\ConstructionMVC.csproj|solutionrelative:constructionmvc\\controllers\\obracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ObraController.cs",
+              "DocumentMoniker": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Controllers\\ObraController.cs",
+              "RelativeDocumentMoniker": "ConstructionMVC\\Controllers\\ObraController.cs",
+              "ToolTip": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Controllers\\ObraController.cs",
+              "RelativeToolTip": "ConstructionMVC\\Controllers\\ObraController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:22:50.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Views\\Obra\\Index.cshtml",
+              "RelativeDocumentMoniker": "ConstructionMVC\\Views\\Obra\\Index.cshtml",
+              "ToolTip": "C:\\Dev\\ConstructionMVC\\ConstructionMVC\\Views\\Obra\\Index.cshtml",
+              "RelativeToolTip": "ConstructionMVC\\Views\\Obra\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T13:52:10.667Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"

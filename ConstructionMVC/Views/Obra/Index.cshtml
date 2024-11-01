@@ -7,6 +7,16 @@
 	<div class="row align-items-center">
 		<div class="col-sm-6"><h1>@ViewData["Title"]</h1></div>
 		<div class="col-sm-6 text-end"><a class="btn btn-info" asp-action="Criar">Nova Obra</a></div>
+
+		<form class="row" asp-controller="Obra" asp-action="Index" method="get">
+			<p>
+				<label class="control-label">Obra</label>
+				<input class="col-sm-6" type="text" name="SearchString" />
+				<input class="btn btn-success btn-sm" type="submit" value="Buscar" />
+			</p>
+		</form>
+
+		
 	</div>
 </header>
 
